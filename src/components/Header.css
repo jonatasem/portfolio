@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.container-header h1 {
+  font-weight: 400;
+}
+.container-header .layout-mobile {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+.container-header .nav-bar ul {
+  display: flex;
+}
+.container-header .nav-bar ul li {
+  margin: 0 1rem;
+}
+.container-header .nav-bar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7529411765);
+  transition: color 0.3s; /* Transição suave para hover */
+}
+.container-header .nav-bar ul li a:hover {
+  color: #8a58cd;
+}
+.container-header .social-media {
+  display: flex;
+}
+.container-header .social-media li {
+  margin: 0 0.5rem;
+}
+.container-header .social-media a {
+  color: rgba(255, 255, 255, 0.7529411765);
+  font-size: 25px;
+}
+.container-header .social-media a:hover {
+  color: #27a3d0;
+  transition: 0.5s;
+}
+.container-header .mobile {
+  display: none;
+}
+.container-header .mobile button {
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7529411765);
+}
+.container-header .mobile button:active {
+  transform: scale(0.5);
+  transition: 1s;
+}
+.container-header .active-nav {
+  animation: animar-nav-mobile 1s ease-in-out;
+  right: 0;
+}
+
+@media (max-width: 800px) {
+  .container-header .layout-mobile {
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.7529411765);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2.5rem 0 2.5rem 0;
+    box-shadow: 1px 1px 10px #27a3d0;
+    transition: right 0.3s ease-in-out;
+  }
+  .container-header .layout-mobile.active-nav {
+    right: 0;
+  }
+  .container-header .layout-mobile .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-header .layout-mobile .nav-bar ul li {
+    margin: 0.3rem 0;
+  }
+  .container-header .layout-mobile ul li a {
+    color: #0f1724;
+  }
+  .container-header .mobile {
+    display: block;
+  }
+}/*# sourceMappingURL=Header.css.map */
