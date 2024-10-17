@@ -5,6 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prettier": "npx prettier . --check",
     "dev": "vite --port 8080 --host 0.0.0.0",
     "start": "vite",
     "build": "vite build",

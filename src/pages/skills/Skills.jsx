@@ -39,8 +39,8 @@ export default function Skills() {
 
   return (
     <>
-      <h2 className="title-page">Tecnologias</h2>
       <div className="container-skills" id="skills">
+        <h2 className="title-page">Tecnologias</h2>
         <ul>
           {techStack.map((tech, index) => (
             <li key={index} className="technology-item">

@@ -34,10 +34,15 @@
       cursor: pointer;
       border: 1px solid transparent;
       transition: box-shadow 0.5s;
-      border-radius: 1.5rem 0 1.5rem 0;
+      border-radius: 25px;
       display: flex;
       max-width: max-content;
       text-decoration: none;
+
+      &:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
     }
 
     a:hover {
@@ -103,7 +108,13 @@
         transform: scale(1);
       }
     }
+
+
+    .cv-download {
+      border-radius: 1.5rem;
+    }
   }
+
 }
 
 @media (max-width: 1260px) {

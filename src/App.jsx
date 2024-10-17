@@ -5,15 +5,23 @@ import Projects from "./pages/projects/Projects.jsx";
 import Technologies from "./pages/skills/Skills.jsx";
 import About from "./pages/about/About.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import Experience from "./pages/experience/Experiencia.jsx";
+import Line from "./components/line/Line.jsx";
 
 function App() {
   return (
     <main className="container-main">
       <Header />
       <Home />
+      <Line />
       <Projects />
+      <Line />
       <Technologies />
+      <Line />
+      <Experience />
+      <Line />
       <About />
+      <Line />
       <Footer />
     </main>
   );

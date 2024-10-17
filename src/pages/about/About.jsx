@@ -3,10 +3,11 @@ import "./About.scss";
 export default function About() {
   return (
     <>
-      <h2 className="title-page" id="about-me">
-        Sobre Mim
-      </h2>
-      <section className="container-about">
+
+      <section className="container-about" id="about-me">
+        <h2 className="title-page">
+          Sobre Mim
+        </h2>
         <ul>
           <li>
             Trabalhei aproximadamente 4 anos na área de atendimento ao cliente,

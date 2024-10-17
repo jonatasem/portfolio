@@ -17,7 +17,7 @@ export default function Home() {
           com foco na criação de interfaces intuitivas e responsivas. <br />{" "}
           Atualmente, cursando o 3º semestre de Engenharia da Computação.
         </p>
-        <a href={curriculo} download="jonatasmoreira_front_end">
+        <a className="cv-download" href={curriculo} download="jonatasmoreira_front_end">
           Download CV
         </a>
       </section>
