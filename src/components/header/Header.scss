@@ -1,0 +1,112 @@
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  h1 {
+    font-weight: 400;
+  }
+
+  .layout-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-bar {
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          text-decoration: none;
+          color: #ffffffc0;
+          transition: color 0.3s; /* Transição suave para hover */
+        }
+
+        a:hover {
+          color: #8a58cd;
+        }
+      }
+    }
+  }
+
+  .social-media {
+    display: flex;
+
+    li {
+      margin: 0 0.5rem;
+    }
+
+    a {
+      color: #ffffffc0;
+      font-size: 25px;
+    }
+    a:hover {
+      color: #27a3d0;
+      transition: 0.5s;
+    }
+  }
+
+  //mobile
+  .mobile {
+    display: none;
+
+    button {
+      font-size: 40px;
+      background-color: transparent;
+      border: none;
+      color: #ffffffc0;
+    }
+
+    button:active {
+      transform: scale(0.5);
+      transition: 1s;
+    }
+  }
+
+  .active-nav {
+    animation: animar-nav-mobile 1s ease-in-out;
+    right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-header {
+    .layout-mobile {
+      position: absolute;
+      top: 80px;
+      right: -100%;
+      width: 200px;
+      height: 250px;
+      background-color: #ffffffc0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 2.5rem 0 2.5rem 0;
+      box-shadow: 1px 1px 10px #27a3d0;
+      transition: right 0.3s ease-in-out;
+      &.active-nav {
+        right: 0;
+      }
+
+      .nav-bar {
+        ul {
+          flex-direction: column;
+          align-items: center;
+          li {
+            margin: 0.3rem 0;
+          }
+        }
+      }
+      ul li a {
+        color: #0f1724;
+      }
+    }
+
+    .mobile {
+      display: block; // Exibe o botão de menu em telas menores
+    }
+  }
+}
