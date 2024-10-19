@@ -3,9 +3,12 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import "./Header.scss";
 
+import RevealOnScroll from '../RevealOnScroll/RevealOnScroll'
+
 export default function Header() {
   return (
-    <header className="container-header">
+    <RevealOnScroll>
+<header className="container-header">
       <h1>J.M. portfólio</h1>
       <section>
         <ul className="social-media" aria-label="Redes sociais">
@@ -36,5 +39,6 @@ export default function Header() {
         </ul>
       </section>
     </header>
+    </RevealOnScroll>
   );
 }

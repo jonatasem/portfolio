@@ -3,6 +3,8 @@ import "./Projects.scss";
 import imagePorfolio from "../../assets/img/projects/portfolio-front.png";
 import eCommerce from "../../assets/img/projects/e-commerce.png";
 
+import RevealOnScroll from '../../components/RevealOnScroll/RevealOnScroll'
+
 const ProjectsDB = [
   {
     id: 0,
@@ -31,25 +33,27 @@ const ProjectsDB = [
 export default function Projects() {
   return (
     <>
-      <div className="container-projects" id="projects">
-        <h2 className="title-page">Projetos</h2>
-        <section>
-          {ProjectsDB.map((project) => (
-            <article key={project.id} className="projects">
-              <h3>{project.nome}</h3>
-              <img src={project.img} alt={project.nome} />
-              <span className="container-btn">
-                <a href={project.link.live}>
-                  <button className="live">Visualização ao vivo</button>
-                </a>
-                <a href={project.link.github}>
-                  <button className="code">Verifique no GitHub</button>
-                </a>
-              </span>
-            </article>
-          ))}
-        </section>
-      </div>
+      <RevealOnScroll>
+        <div className="container-projects" id="projects">
+          <h2 className="title-page">Projetos</h2>
+          <section>
+            {ProjectsDB.map((project) => (
+              <article key={project.id} className="projects">
+                <h3>{project.nome}</h3>
+                <img src={project.img} alt={project.nome} />
+                <span className="container-btn">
+                  <a href={project.link.live}>
+                    <button className="live">Visualização ao vivo</button>
+                  </a>
+                  <a href={project.link.github}>
+                    <button className="code">Verifique no GitHub</button>
+                  </a>
+                </span>
+              </article>
+            ))}
+          </section>
+        </div>
+      </RevealOnScroll>
     </>
   );
 }

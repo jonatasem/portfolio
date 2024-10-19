@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  min-height: 450px;
 
   .home-left {
     width: 50%;
@@ -75,6 +76,7 @@
 
     @keyframes animar-home {
       0% {
+
         transform: translateX(200%);
       }
       100% {

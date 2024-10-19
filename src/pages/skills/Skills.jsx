@@ -17,6 +17,7 @@ import laravel from "../../assets/svg/laravel.svg";
 import wordpress from "../../assets/svg/wordpress.svg";
 
 import "./Skills.scss";
+import RevealOnScroll from "../../components/RevealOnScroll/RevealOnScroll";
 
 export default function Skills() {
   const techStack = [
@@ -39,36 +40,38 @@ export default function Skills() {
   ];
 
   return (
-    <div className="container-skills" id="skills">
-      <h2 className="title-page">Tecnologias</h2>
-      <div className="carousel">
-        <ul className="carousel-list">
-          {techStack.concat(techStack).map((tech, index) => (
-            <li key={index} className="technology-item">
-              <img
-                src={tech.icon}
-                alt={`${tech.name} icon`}
-                className="technology-icon"
-              />
-              <span className="technology-name">{tech.name}</span>
-            </li>
-          ))}
-        </ul>
+   <RevealOnScroll>
+      <div className="container-skills" id="skills">
+        <h2 className="title-page">Tecnologias</h2>
+        <div className="carousel">
+          <ul className="carousel-list">
+            {techStack.concat(techStack).map((tech, index) => (
+              <li key={index} className="technology-item">
+                <img
+                  src={tech.icon}
+                  alt={`${tech.name} icon`}
+                  className="technology-icon"
+                />
+                <span className="technology-name">{tech.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="carousel reverse">
+          <ul className="carousel-list">
+            {techStack.concat(techStack).map((tech, index) => (
+              <li key={index} className="technology-item">
+                <img
+                  src={tech.icon}
+                  alt={`${tech.name} icon`}
+                  className="technology-icon"
+                />
+                <span className="technology-name">{tech.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="carousel reverse">
-        <ul className="carousel-list">
-          {techStack.concat(techStack).map((tech, index) => (
-            <li key={index} className="technology-item">
-              <img
-                src={tech.icon}
-                alt={`${tech.name} icon`}
-                className="technology-icon"
-              />
-              <span className="technology-name">{tech.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+   </RevealOnScroll>
   );
 }
