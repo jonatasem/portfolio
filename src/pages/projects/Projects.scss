@@ -29,14 +29,15 @@
   
         a {
           button {
-            background-image: linear-gradient(to right, #8e44ad, #3498db);
-            padding: 0.5rem 1rem;
+            background-color: transparent;
+            font-size: 15px;
             border: none;
             color: white;
             border-radius: 0.5rem;
+            cursor: pointer;
 
             &:hover {
-              transform: scale(0.9);
+              text-decoration:underline;
             }
           }
         }

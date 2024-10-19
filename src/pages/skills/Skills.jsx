@@ -1,3 +1,4 @@
+import React from "react";
 import angular from "../../assets/svg/angular.svg";
 import figma from "../../assets/svg/figma.svg";
 import git from "../../assets/svg/git.svg";
@@ -27,7 +28,7 @@ export default function Skills() {
     { name: "TypeScript", icon: typescript },
     { name: "Angular", icon: angular },
     { name: "PHP", icon: php },
-    { name: "Lavavel", icon: laravel },
+    { name: "Laravel", icon: laravel },
     { name: "MySQL", icon: mysql },
     { name: "NodeJS", icon: nodejs },
     { name: "Express", icon: express },
@@ -38,11 +39,11 @@ export default function Skills() {
   ];
 
   return (
-    <>
-      <div className="container-skills" id="skills">
-        <h2 className="title-page">Tecnologias</h2>
-        <ul>
-          {techStack.map((tech, index) => (
+    <div className="container-skills" id="skills">
+      <h2 className="title-page">Tecnologias</h2>
+      <div className="carousel">
+        <ul className="carousel-list">
+          {techStack.concat(techStack).map((tech, index) => (
             <li key={index} className="technology-item">
               <img
                 src={tech.icon}
@@ -54,6 +55,20 @@ export default function Skills() {
           ))}
         </ul>
       </div>
-    </>
+      <div className="carousel reverse">
+        <ul className="carousel-list">
+          {techStack.concat(techStack).map((tech, index) => (
+            <li key={index} className="technology-item">
+              <img
+                src={tech.icon}
+                alt={`${tech.name} icon`}
+                className="technology-icon"
+              />
+              <span className="technology-name">{tech.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }
