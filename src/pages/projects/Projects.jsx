@@ -3,6 +3,8 @@ import "./Projects.scss";
 import imagePorfolio from "../../assets/img/projects/portfolio-front.png";
 import eCommerce from "../../assets/img/projects/e-commerce.png";
 
+import imgMovies from "../../assets/img/projects/Movies.png"
+
 import RevealOnScroll from '../../components/RevealOnScroll/RevealOnScroll'
 
 const ProjectsDB = [
@@ -19,6 +21,17 @@ const ProjectsDB = [
   },
   {
     id: 1,
+    nome: "Movies",
+    img: imgMovies,
+    description:
+      "Desenvolvido com React Vite, utilizando SASS.",
+    link: {
+      live: "https://jonatasem.github.io/movies-lionsgate/",
+      github: "https://github.com/jonatasem/movies-lionsgate",
+    },
+  },
+  {
+    id: 2,
     nome: "E-commerce",
     img: eCommerce,
     description:
