@@ -1,0 +1,66 @@
+.container-home {
+  background-image: url(../../assets/img/fundo.png);
+  border-radius: 5rem;
+  text-align: center;
+  padding: 0 0 5rem 0;
+
+  .autor {
+    width: 200px;
+    margin: 4rem auto;
+    position: relative;
+
+    p {
+      max-width: max-content;
+      padding: 0.5rem 0.8rem;
+      background-color: white;
+      border-radius: 1rem;
+      color: black;
+      font-size: 10px;
+      position: absolute;
+      top: 30px;
+      right: -30px;
+      transform: rotate(-10deg);
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 1px 1px 5px silver;
+      background-color: #d7d7d7;
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+    color: black;
+    max-width: 550px;
+    margin: 0 auto 4rem;
+  }
+
+  .btn-home {
+    background-color: #242424;
+    padding: 1.2rem 2.2rem;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:950px) {
+  .container-home {
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (max-width:650px) {
+  .container-home {
+    padding: 0 1.5rem;
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
