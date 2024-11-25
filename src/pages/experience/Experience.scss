@@ -1,0 +1,42 @@
+.container-experience {
+    width: 90%;
+    margin: 0 auto;
+
+    article {
+        margin: 0.5rem 0 2.5rem 0;
+        width: 95%;
+
+        h3 {
+            margin: 0.5rem 0 0.2rem 0;
+            color: rgb(35, 35, 58);
+        }
+        h4 {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin: 0.5rem 0;
+
+            strong {
+                color: rgb(201, 219, 235);
+            }
+        }
+    }
+
+    .layout-experience {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .container-experience {
+        article {
+            ul {
+                width: 100%;
+                text-align: justify;
+            }
+        }
+    }
+}
