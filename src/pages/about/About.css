@@ -1,0 +1,37 @@
+.container-about {
+  padding: 1.5rem;
+}
+.title-about {
+  margin: 0 1rem;
+}
+.container-about h2 {
+  margin-bottom: 1.5rem;
+}
+.resume {
+  margin: 0 1rem 1rem;
+}
+
+.about-center article {
+  padding: 1rem;
+}
+.skills li {
+  margin: 1rem 0;
+}
+.skills li strong {
+  color: #d1f34a;
+}
+
+@media (max-width:999px) {
+  .about-center {
+    flex-direction: column;
+  }
+  .about-center article {
+    width: 100%;
+  }
+}
+
+@media (max-width:599px) {
+  .container-about {
+    padding: 1rem;
+  }
+}

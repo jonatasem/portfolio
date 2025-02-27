@@ -1,0 +1,146 @@
+/*home-geral*/
+.container-home {
+  min-height: 100vh;
+  padding: 8rem 2.5rem 0;
+  display: flex;
+}
+.container-home article {
+  padding: 0 1.5rem;
+}
+.home-left {
+  width: 70%;
+}
+.home-right {
+  width: 30%;
+}
+
+/*home-left*/
+.home-left h3 {
+  font-weight: 400;
+}
+.home-left h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+.home-left p {
+  margin-bottom: 1rem;
+}
+
+/*home-right*/
+.home-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5rem 0 5rem 0;
+}
+
+/*home-skills*/
+.home-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-skills li {
+  list-style-type: none;
+  margin: 0 1rem 1rem 0;
+  background-image: linear-gradient(to bottom, #ffffff1a, #ffffff00);
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+/*home-buttons*/
+.home-buttons a {
+  color: silver;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  font-size: 15px;
+  border-color: transparent;
+  background-color: #ffffff1a;
+  display: inline-flex;
+}
+.home-buttons a:first-child {
+  margin-right: 2rem;
+  background-color: #d1f34a;
+  color: black;
+}
+.home-buttons a:last-child {
+  display: inline-flex;
+}
+.btn-curriculo {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+}
+.btn-curriculo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d1f34a;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+.btn-curriculo:hover::before {
+  transform: translateX(0);
+}
+.btn-curriculo:hover {
+  color: black;
+}
+.btn-curriculo span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+@media (max-width:999px) {
+  .container-home {
+    flex-direction: column;
+    min-height: none;
+    padding: 8rem 1.5rem 0;
+  }
+  .container-home article {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .home-right {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  .home-right img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width:599px) {
+  .container-home {
+    padding: 8rem 1rem 0;
+  }
+}
+
+
+@media (max-width:545px) {
+  .container-home {
+    padding: 6rem 0rem 0;
+  }
+  .home-buttons a {
+    margin: 1rem 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .btn-curriculo span {
+    width: 100%;
+  }
+
+}
+
