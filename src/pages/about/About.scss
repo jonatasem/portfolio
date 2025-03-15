@@ -1,0 +1,106 @@
+.container-about {
+  padding: 1.5rem;
+
+  .about-header {
+    text-align: center;
+  }
+
+  .about-left {
+    padding: 2rem;
+
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  .about-right {
+    .hobbies {
+      margin: 1rem 0;
+
+      ul {
+        li {
+          margin: 1rem 0 0 0;
+          strong {
+            color: #d1f34a;
+          }
+        }
+      }
+    }
+  }
+
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 2rem;
+
+    article {
+      width: calc(100% / 2);
+    }
+  }
+
+  .about-footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 999px) {
+  .container-about {
+    .about-footer {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container-about {
+    text-align: center;
+
+    .about-header {
+      margin-bottom: 1rem;
+    }
+
+    .about-center {
+      margin: 0 auto;
+      padding: 0rem;
+      flex-direction: column-reverse;
+
+      article {
+        width: 100%;
+      }
+
+      .about-left {
+        text-align: center;
+
+        img {
+          max-width: 50%;
+        }
+      }
+      .about-right {
+        .hobbies {
+          width: 80%;
+          margin: 2.5rem auto;
+          text-align: justify;
+        }
+      }
+    }
+    .about-footer {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 699px) {
+  .container-about {
+    .about-center {
+      .about-right {
+        padding: 0.5rem;
+        .hobbies {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

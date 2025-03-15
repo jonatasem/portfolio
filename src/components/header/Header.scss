@@ -1,0 +1,52 @@
+.container-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  /* Estilo para o id active */
+  #active {
+    color: #d1f34a;
+    font-weight: bold;
+  }
+
+  /*logo*/
+  .header-logo h1 {
+    font-size: 25px;
+  }
+  .header-logo span {
+    color: #d1f34a;
+  }
+
+  /*navbar*/
+  .header-navbar nav ul {
+    display: flex;
+  }
+  .header-navbar nav ul li {
+    margin: 0 1rem;
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+  .header-navbar nav ul li a {
+    color: white;
+  }
+
+  .header-navbar nav ul li a:hover {
+    color: #d1f34a;
+    transition: 0.5s;
+  }
+}
+
+/*responsivo 768px*/
+@media (max-width: 768px) {
+  .header-navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .container-header {
+    padding: 1rem 0rem;
+  }
+}

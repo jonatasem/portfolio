@@ -1,0 +1,15 @@
+.back-to-top {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.back-to-top:active {
+  transform: scale(0.9);
+}
+.icon-back-to-top {
+  font-size: 30px;
+  color: #d1f34a;
+}

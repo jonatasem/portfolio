@@ -1,0 +1,10 @@
+.container-app {
+  background-image: url(../assets/img/fundo.png);
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}

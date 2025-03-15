@@ -1,0 +1,64 @@
+.container-mobile {
+  width: 100%;
+}
+
+.container-layout {
+  position: relative;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  color: #d1f34a;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: max-content;
+  max-height: max-content;
+  z-index: 3;
+}
+
+.menu-toggle:active {
+  transform: scale(1.05);
+}
+
+.mobile-navbar {
+  padding: 2.5rem 1.5rem;
+  position: fixed;
+  width: 80%;
+  margin: 2.5rem auto;
+  left: 10%;
+  top: 15vh;
+  z-index: 5;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-image: url(../../assets/img/fundo.png);
+  border: 1px solid #d1f34a;
+}
+
+.mobile-navbar ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mobile-navbar ul li {
+  margin: 1rem 0;
+  list-style-type: none;
+}
+.mobile-navbar ul li a {
+  color: white;
+}
+
+.container-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container-mobile {
+    display: block;
+  }
+}
