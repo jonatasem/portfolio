@@ -11,14 +11,14 @@ export default function Projects() {
 
   return (
     <section className="container-projects visible" id="projects">
-      <div className="projects-header">
-        <p>NOSSOS TRABALHOS</p>
-        <h2>Crie ótimos produtos</h2>
+      <div className="projects-header visible">
+        <p className="visible">NOSSOS TRABALHOS</p>
+        <h2 className="visible">Crie ótimos produtos</h2>
       </div>
-      <ul className="projects-main">
+      <ul className="projects-main visible">
         {ProjectsData.length > 0 ? (
           ProjectsData.map((project) => (
-            <li key={project.id} onClick={() => handleProjectClick(project.id)}>
+            <li className="visible" key={project.id} onClick={() => handleProjectClick(project.id)}>
               <img src={project.screenshot} alt={project.nome} />
             </li>
           ))

@@ -36,10 +36,10 @@ export default function Contact() {
           </li>
         </div>
       </article>
-      <article className="container-contact-form">
+      <article className="container-contact-form visible">
         <h3>Grande visão sem ótimas pessoas é irrelevante.</h3>
         <p>Vamos trabalhar juntos.</p>
-        <form className="form-contact">
+        <form className="form-contact visible">
           <article className="form-group visible">
             <input
               type="text"
@@ -67,7 +67,7 @@ export default function Contact() {
               required
             ></textarea>
           </article>
-          <button className="btn-contact" type="submit">
+          <button className="btn-contact visible" type="submit">
             <a href="">
               <span>Enviar</span>
             </a>

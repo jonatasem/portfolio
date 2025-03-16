@@ -16,21 +16,21 @@ export default function Opened() {
   }
 
   return (
-    <section className="projeto-open">
-      <div className="open-center">
-        <article className="open-left">
+    <section className="projeto-open visible">
+      <div className="open-center visible">
+        <article className="open-left visible">
           <h3>Screenshots:</h3>
           <img src={project.screenshot} alt={`Screenshot de ${project.nome}`} />
         </article>
-        <article className="open-right">
-          <div className="projeto-content">
-            <button className="close-button" onClick={onClose}>
+        <article className="open-right visible">
+          <div className="projeto-content visible">
+            <button className="close-button visible" onClick={onClose}>
               Fechar
             </button>
-            <h2>{project.nome}</h2>
-            <p>{project.descricao}</p>
-            <h3>Tecnologias Utilizadas:</h3>
-            <ul>
+            <h2 className="visible">{project.nome}</h2>
+            <p className="visible">{project.descricao}</p>
+            <h3 className="visible">Tecnologias Utilizadas:</h3>
+            <ul className="visible">
               {project.tecnologias.map((tecnologia, index) => (
                 <li key={index}>{tecnologia}</li>
               ))}
@@ -45,8 +45,8 @@ export default function Opened() {
             <p>{project.desafios}</p>
             <h3>Feedback:</h3>
             <p>{project.feedback}</p>
-            <div className="links">
-              <div className="links-left">
+            <div className="links visible">
+              <div className="links-left visible">
                 <h3>Ver Código-Fonte:</h3>
                 <a
                   href={project.linkCodigo}
@@ -56,7 +56,7 @@ export default function Opened() {
                   Ver Código
                 </a>
               </div>
-              <div className="links-right">
+              <div className="links-right visible">
                 <h3>Ver ao vivo:</h3>
                 <a
                   href={project.linkAoVivo}

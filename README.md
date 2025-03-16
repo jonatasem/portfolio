@@ -1,5 +1,7 @@
 # Portfólio
 
+![Banner do Projeto](./src/assets/img/portfolio.png)
+
 Este é um portfólio pessoal que demonstra minhas habilidades e projetos como desenvolvedor front-end. O site é responsivo e contém várias seções, incluindo uma apresentação sobre mim, meus projetos, informações de contato e muito mais.
 
 # Tecnologias Utilizadas
@@ -36,3 +38,4 @@ Se você tiver alguma dúvida ou quiser discutir sobre o projeto, sinta-se à vo
 - Nome: Jonatas Elieser Moreira
 - Email: jonatas.em20@gmail.com
 - LinkedIn: [Jonatas](https://www.linkedin.com/in/jonatas-elieser-moreira-948632270/)
+

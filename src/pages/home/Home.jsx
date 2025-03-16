@@ -21,10 +21,10 @@ export default function Home() {
   };
 
   return (
-    <section className="container-home" id="home">
+    <section className="container-home visible" id="home">
       <Header />
-      <div className="home-center">
-        <article className="home-left">
+      <div className="home-center visible">
+        <article className="home-left visible">
           <h3 className="visible">Olá, meu nome é</h3>
           <h1 className="visible">Jonatas Elieser Moreira</h1>
           <p className="visible resume-home">
@@ -38,7 +38,7 @@ export default function Home() {
             Aqui estão algumas das tecnologias com as quais trabalhei:
           </p>
           <ul className="home-skills visible">{getDataSkill()}</ul>
-          <div className="home-button">
+          <div className="home-button visible">
             <a href="#contact">Entre em contato</a>
             <a href={Curriculo} className="btn-curriculo">
               <span>Baixar meu Currículo</span>
