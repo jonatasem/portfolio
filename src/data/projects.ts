@@ -22,7 +22,7 @@ export const DataProjects: DataProjectProps[] = [
     image: "/a-forja-barber.png",
     category: "Fullstack",
     githubUrl: "https://github.com/jonatasem/a_forja",
-    deployUrl: "https://a-forja-sigma.vercel.app",
+    deployUrl: "https://a-forja-jet.vercel.app",
     details: {
       overview: "A Forja é uma plataforma web para agendamentos online e gestão comercial de barbearias, otimizando o fluxo de atendimento entre clientes e profissionais.",
       architecture: [
