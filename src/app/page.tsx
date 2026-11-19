@@ -4,13 +4,13 @@ import { Navbar } from "@/components/Navbar";
 import { ProjectCard } from "@/components/ProjectCard";
 import {
   LuArrowUpRight,
+  LuMail,
   LuShieldCheck,
 } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { DataProjects } from "@/data/projects";
 
 export default function Home() {
-
   return (
     <div className="min-h-screen bg-slate-950 text-slate-300 selection:bg-emerald-500/30 selection:text-emerald-400 font-sans relative overflow-x-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[320px] sm:w-150 h-75 bg-emerald-500/10 blur-[120px] pointer-events-none rounded-full" />
@@ -19,7 +19,7 @@ export default function Home() {
 
       <section id="home" className="pt-28 sm:pt-36 pb-12 px-4 sm:px-6 max-w-7xl mx-auto relative">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -42,14 +42,14 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-              <a 
-                href="#projects" 
+              <a
+                href="#projects"
                 className="w-full sm:w-auto justify-center px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-2xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95 flex items-center gap-2 text-sm"
               >
                 Explorar Projetos <LuArrowUpRight size={18} />
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="mailto:jonatas.em25@gmail.com"
                 className="w-full sm:w-auto text-center px-6 py-3.5 bg-slate-900/90 hover:bg-slate-800 text-white font-bold rounded-2xl border border-slate-800 hover:border-slate-700 transition-all active:scale-95 text-sm"
               >
                 Entrar em Contato
@@ -58,11 +58,11 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-6 border-t border-slate-900 max-w-xl">
               <div className="p-3.5 sm:p-0 rounded-2xl bg-slate-900/40 sm:bg-transparent border border-slate-800/60 sm:border-none flex sm:block items-center justify-between">
-                <span className="text-base sm:text-xl font-black text-white block">Node & React</span>
+                <span className="text-base sm:text-xl font-black text-white block">Node.js & Next.js</span>
                 <span className="text-[11px] text-slate-400 sm:text-slate-500 font-mono">Ecossistema Principal</span>
               </div>
               <div className="p-3.5 sm:p-0 rounded-2xl bg-slate-900/40 sm:bg-transparent border border-slate-800/60 sm:border-none flex sm:block items-center justify-between">
-                <span className="text-base sm:text-xl font-black text-emerald-400 block">Jest & Zod</span>
+                <span className="text-base sm:text-xl font-black text-emerald-400 block">Zod & Jest</span>
                 <span className="text-[11px] text-slate-400 sm:text-slate-500 font-mono">Qualidade & Testes</span>
               </div>
               <div className="p-3.5 sm:p-0 rounded-2xl bg-slate-900/40 sm:bg-transparent border border-slate-800/60 sm:border-none flex sm:block items-center justify-between">
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -85,25 +85,25 @@ export default function Home() {
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
               </div>
               <span className="text-[10px] font-mono text-emerald-400/90 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
-                dev.status: disponível
+                dev.status: true
               </span>
             </div>
 
             <div className="bg-slate-950 p-3.5 sm:p-4 rounded-2xl border border-slate-800/80 text-slate-300 space-y-2 leading-relaxed font-mono overflow-x-auto">
               <p className="text-[11px] sm:text-xs">
-                <span className="text-purple-400">const</span>{' '}
+                <span className="text-purple-400">const</span>{" "}
                 <span className="text-blue-400">tecnologias</span> = [
-                &quot;TypeScript&quot;, &quot;Next.js&quot;, &quot;Node.js&quot;, &quot;Prisma&quot;, &quot;MongoDB&quot;
+                &quot;TypeScript&quot;, &quot;Next.js&quot;, &quot;TailwindCSS&quot;, &quot;Node.js&quot;, &quot;Prisma&quot;, &quot;MongoDB&quot;, &quot;Docker&quot;, &quot;OracleCloud&quot;
                 ];
               </p>
               <p className="text-[11px] sm:text-xs">
-                <span className="text-purple-400">const</span>{' '}
+                <span className="text-purple-400">const</span>{" "}
                 <span className="text-blue-400">principios</span> = [
                 &quot;Mobile-First&quot;, &quot;APIs RESTful&quot;, &quot;Arquitetura Limpa&quot;, &quot;Testes Unitários&quot;
                 ];
               </p>
               <p className="text-[11px] sm:text-xs">
-                <span className="text-emerald-400">return</span>{' '}
+                <span className="text-emerald-400">return</span>{" "}
                 &quot;Software confiável pronto para produção.&quot;;
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
       <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto text-center">
         <div className="relative overflow-hidden bg-linear-to-b from-slate-900 via-slate-900 to-slate-950 border border-emerald-500/30 px-5 py-10 sm:p-16 rounded-3xl shadow-2xl space-y-5 sm:space-y-6">
           <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-emerald-500/10 blur-3xl pointer-events-none rounded-full" />
-          
+
           <span className="inline-block text-[11px] sm:text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
             Contato
           </span>
@@ -152,9 +152,19 @@ export default function Home() {
           <p className="text-slate-400 mx-auto text-sm sm:text-base leading-relaxed max-w-xl">
             Estou disponível para contratações, projetos freelancers e parcerias de desenvolvimento.
           </p>
+
+          <div className="pt-2">
+            <a
+              href="mailto:jonatas.em25@gmail.com"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-2xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95 text-sm"
+            >
+              <LuMail size={18} />
+              Enviar Email
+            </a>
+          </div>
         </div>
       </section>
-      
+
       <footer className="py-8 px-4 text-center border-t border-slate-900 text-slate-500 text-xs font-mono">
         © 2026 Jonatas Elieser Moreira. Todos os direitos reservados.
       </footer>
