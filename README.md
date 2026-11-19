@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio — Jonatas Elieser Moreira
 
-## Getting Started
+Aplicação web desenvolvida para apresentar meus projetos, stack técnica e formas de contato profissional. Construída com foco em responsividade (Mobile-First), tipagem estrita e carregamento rápido.
 
-First, run the development server:
+## Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Biblioteca UI:** React 19
+- **Linguagem:** TypeScript 5
+- **Estilização:** Tailwind CSS v4
+- **Animações e Ícones:** Framer Motion, Lucide React e React Icons
+
+## Funcionalidades
+
+- **Apresentação:** Resumo profissional e principais tecnologias utilizadas no dia a dia.
+- **Vitrine de Projetos:** Cards dinâmicos alimentados via tipagem centralizada (`src/data/projects.ts`), com acesso direto ao deploy e ao repositório no GitHub.
+- **Navegação Responsiva:** Menu adaptado para mobile e dropdown no desktop com download direto do currículo em PDF.
+- **Contato:** Acesso rápido por e-mail.
+
+## Estrutura do Projeto
+
+```text
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── Navbar.tsx
+│   └── ProjectCard.tsx
+└── data/
+    └── projects.ts
+public/
+├── a-forja-barber.png
+├── jonatas-moreira-desenvolvedor-full-stack.pdf
+└── logo.png
+```
+
+## Como rodar localmente
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/jonatasem/portfolio.git
+cd portfolio
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contato
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **E-mail:** jonatas.em25@gmail.com
+- **GitHub:** [github.com/jonatasem](https://github.com/jonatasem)
