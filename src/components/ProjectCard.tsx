@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { LuMapPin, LuCpu, LuExternalLink, LuGithub } from "react-icons/lu";
+import { LuCpu, LuExternalLink, LuGithub } from "react-icons/lu";
 import Image from "next/image";
 import { type DataProjectProps } from "@/data/projects";
 
@@ -33,13 +33,6 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             className="object-cover object-top group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
           />
           <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/30 to-transparent" />
-
-          <div className="absolute top-3 left-3 flex gap-2 z-10">
-            <span className="px-2.5 py-1 bg-slate-950/85 backdrop-blur-md border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
-              {project.category === "Geotech" ? <LuMapPin size={11} /> : <LuCpu size={11} />}
-              {project.category}
-            </span>
-          </div>
 
           <div className="absolute bottom-3 right-3 z-10 flex items-center gap-2">
             {project.githubUrl && (

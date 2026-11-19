@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import { Menu, X, Terminal, FolderGit2, ChevronDown, Mail } from "lucide-react";
+import { Terminal, FolderGit2, ChevronDown, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import imgLogoDesk from "../../public/logo.png"
+import imgLogoDesk from "../../public/logo.png";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,16 +43,20 @@ export const Navbar = () => {
           </Link>
 
           <div className="relative">
-            <div 
+            <div
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="flex flex-col items-center gap-1 group cursor-pointer"
             >
-              <Image src={imgLogoDesk} alt="imagem do logotipo desktop" className="w-10 h-10 object-cover rounded-full border-2 border-emerald-500/30 group-hover:border-emerald-400 transition-all"/>
-              <ChevronDown 
-                size={14} 
+              <Image
+                src={imgLogoDesk}
+                alt="imagem do logotipo desktop"
+                className="w-10 h-10 object-cover rounded-full border-2 border-emerald-500/30 group-hover:border-emerald-400 transition-all"
+              />
+              <ChevronDown
+                size={14}
                 className={`text-emerald-400 transition-transform duration-300 ${
                   isDropdownOpen ? "rotate-180" : "group-hover:translate-y-0.5"
-                }`} 
+                }`}
               />
             </div>
 
@@ -63,14 +67,14 @@ export const Navbar = () => {
                   : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
               }`}
             >
-              <Link
+              <a
                 href="mailto:jonatas.em25@gmail.com"
                 onClick={() => setIsDropdownOpen(false)}
                 className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-900/80 transition-colors"
               >
                 <Mail size={16} className="text-emerald-400" />
                 <span>Email</span>
-              </Link>
+              </a>
 
               <a
                 href="/jonatas-moreira-desenvolvedor-full-stack.pdf"
@@ -88,10 +92,23 @@ export const Navbar = () => {
         </div>
 
         <button
-          className="md:hidden p-2 text-slate-300 hover:text-white bg-slate-900 border border-slate-800 rounded-xl"
+          type="button"
+          aria-label="Alternar menu de navegação"
+          aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden flex flex-col items-center gap-1 group cursor-pointer"
         >
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
+          <Image
+            src={imgLogoDesk}
+            alt="imagem do logotipo mobile"
+            className="w-10 h-10 object-cover rounded-full border-2 border-emerald-500/30 group-hover:border-emerald-400 transition-all"
+          />
+          <ChevronDown
+            size={14}
+            className={`text-emerald-400 transition-transform duration-300 ${
+              isOpen ? "rotate-180" : "group-hover:translate-y-0.5"
+            }`}
+          />
         </button>
       </div>
 
@@ -100,24 +117,23 @@ export const Navbar = () => {
           <Link href="#projects" onClick={() => setIsOpen(false)} className="py-2 text-slate-300">
             Projetos
           </Link>
-          <Link href="#contact" onClick={() => setIsOpen(false)} className="py-2 text-slate-300">
-            Contato
-          </Link>
-          
-          <a 
-            href="/jonatas-moreira-desenvolvedor-full-stack.pdf" 
-            download="Curriculo_Jonatas_Moreira.pdf" 
+
+          <a
+            href="mailto:jonatas.em25@gmail.com"
+            onClick={() => setIsOpen(false)}
+            className="py-2 text-slate-300 flex items-center gap-1.5"
+          >
+            <Mail size={16} className="text-emerald-400" />
+            <span>Email</span>
+          </a>
+
+          <a
+            href="/jonatas-moreira-desenvolvedor-full-stack.pdf"
+            download="Curriculo_Jonatas_Moreira.pdf"
             onClick={() => setIsOpen(false)}
             className="py-2 text-slate-300 flex items-center gap-1.5"
           >
             <FolderGit2 size={16} className="text-emerald-400" /> Baixar CV
-          </a>
-
-          <a
-            href="mailto:jonatas.em25@gmail.com"
-            className="w-full text-center py-3 bg-emerald-500 text-slate-950 font-bold rounded-xl"
-          >
-            Entrar em Contato
           </a>
         </div>
       )}
