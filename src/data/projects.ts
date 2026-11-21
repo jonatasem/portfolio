@@ -31,5 +31,36 @@ export const DataProjects: DataProjectProps[] = [
         "Interface moderna, fluida e responsiva com abordagem Mobile-First via Tailwind CSS."
       ]
     }
+  },
+  {
+    id: "1",
+    title: "AgroFlow – Fleet & Work Order CMMS",
+    description:
+      "Sistema web full-stack para gestão de ordens de serviço, atendimento por setor e manutenção de frotas e equipamentos agrícolas com controle de acesso por perfil.",
+    techs: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Fastify",
+      "Prisma ORM",
+      "MongoDB",
+      "JWT",
+      "RBAC",
+    ],
+    image: "/agro-flow.png",
+    category: "Fullstack",
+    githubUrl: "https://github.com/jonatasem/agro-flow",
+    deployUrl: "https://agro-flow-ivory.vercel.app",
+    details: {
+      overview:
+        "AgroFlow é uma aplicação full-stack desenvolvida para centralizar a abertura de ordens de serviço por equipamento/frota, o acompanhamento de atendimentos por setor e o cálculo do tempo de manutenção operacional.",
+      architecture: [
+        "Frontend em Next.js (App Router) com TypeScript e Tailwind CSS em abordagem Mobile-First, utilizando cards responsivos no celular e tabela no desktop.",
+        "Backend em Node.js e Fastify com arquitetura modular de controllers e services, autenticação JWT, validação e controle de acesso baseado em perfis (RBAC).",
+        "Persistência com Prisma ORM e MongoDB, agrupando chamados na mesma O.S. aberta e gerenciando estados de setor (iniciar, pausar, retomar e finalizar).",
+      ],
+    },
   }
 ];
