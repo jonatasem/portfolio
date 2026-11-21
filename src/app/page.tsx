@@ -31,14 +31,14 @@ export default function Home() {
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-black text-white tracking-tight leading-[1.15]">
-              Construindo aplicações{" "}
+              Código limpo,{" "}
               <span className="bg-linear-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent">
-                escaláveis, testadas e de alta performance.
+                testes sólidos e aplicações de alta performance.
               </span>
             </h1>
 
             <p className="text-sm sm:text-lg text-slate-400 leading-relaxed font-normal max-w-2xl">
-              Graduando em Engenharia da Computação focado na criação de software resiliente. Desenvolvo no ecossistema JavaScript/TypeScript com arquitetura limpa (Controller-Service), validação defensiva com Zod e testes unitários com Jest. No frontend, crio interfaces modernas e responsivas Mobile-First com React, Next.js (App Router) e Tailwind CSS.
+              Graduando em Engenharia da Computação com domínio no ecossistema JavaScript/TypeScript, modelagem e persistência em bancos de dados relacionais e não relacionais, além de containerização com Docker, infraestrutura e hospedagem em VPS Linux na Oracle Cloud.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
@@ -152,16 +152,6 @@ export default function Home() {
           <p className="text-slate-400 mx-auto text-sm sm:text-base leading-relaxed max-w-xl">
             Estou disponível para contratações, projetos freelancers e parcerias de desenvolvimento.
           </p>
-
-          <div className="pt-2">
-            <a
-              href="mailto:jonatas.em25@gmail.com"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold rounded-2xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95 text-sm"
-            >
-              <LuMail size={18} />
-              Enviar Email
-            </a>
-          </div>
         </div>
       </section>
 
